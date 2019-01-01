@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/today_weaher_view_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark">
+
+
+    <ImageView
+        android:id="@+id/today_imageView"
+        android:layout_width="119dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/today_date_View"
+        android:layout_width="116dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/today_imageView"
+        app:layout_constraintTop_toTopOf="@+id/today_imageView" />
+
+    <TextView
+        android:id="@+id/today_weather_text_View"
+        android:layout_width="143dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="3dp"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/today_date_View"
+        app:layout_constraintTop_toBottomOf="@+id/today_date_View"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/today_highTemp_text_view"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/today_date_View"
+        app:layout_constraintStart_toEndOf="@+id/today_date_View"
+        app:layout_constraintTop_toTopOf="@+id/today_date_View"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/today_lowTemp_text_view"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/today_weather_text_View"
+        app:layout_constraintStart_toEndOf="@+id/today_weather_text_View"
+        app:layout_constraintTop_toTopOf="@+id/today_weather_text_View"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
